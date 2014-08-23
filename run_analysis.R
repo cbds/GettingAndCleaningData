@@ -26,8 +26,6 @@ X.m.sd <- c(1, 2, 3, 4, 5, 6, 41, 42, 43, 44, 45,
 	    270, 271, 345, 346, 347, 348, 349, 350, 424, 425, 426,
 	    427, 428, 429, 503, 504, 516, 517, 529, 530, 542, 543)
 
-p(X.m.sd)
-
 # read the training datasets
 X.train <- read.table(paste(zipDir, "UCI HAR Dataset/train/X_train.txt", sep = "/"))
 y.train <- read.table(paste(zipDir, "UCI HAR Dataset/train/y_train.txt", sep = "/"))
