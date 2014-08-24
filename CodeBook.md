@@ -110,7 +110,7 @@ This dataset was created by merging the Training and Test datasets from the orig
 
 ### HARtidy2.txt
 
-This dataset was created by summarizing the HARtidy1.txt dataset. This dataset provides the mean value of all measurements grouped by each Subject and Activity combination. Accordingly, this dataset contains a Subject, an Activity, and the mean values of 66 Measurements. The dataset was formatted using the write.table() function of R, which contains one record per line, with features separated by a space.
+This dataset was created by summarizing the HARtidy1.txt dataset. This dataset provides the average value of all measurements grouped by each Subject and Activity combination. Accordingly, this dataset contains a Subject, an Activity, and the average values of 66 Measurements. The dataset was formatted using the write.table() function of R, which contains one record per line, with features separated by a space.
 
 #### Feature Descriptions
 
@@ -127,7 +127,7 @@ This dataset was created by summarizing the HARtidy1.txt dataset. This dataset p
     * 6 LAYING
 
 * Measurements
-  - The average value of the corresponding measurements in HARtidy1,txt, grouped by each Subject and Activity combination. The feature names and units are unchanged from those used in HARtidy1.txt. Average values for each measurement will fall into the range of [-1,1].
+  - The average value of the corresponding measurements in HARtidy1.txt, grouped by each Subject and Activity combination. The feature names and units are unchanged from those used in HARtidy1.txt. Average values for each measurement will fall into the range of [-1,1].
     * tBodyAcc-mean()-X
     * tBodyAcc-mean()-Y
     * tBodyAcc-mean()-Z
