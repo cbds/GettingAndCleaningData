@@ -10,10 +10,10 @@ This dataset was created by merging the Training and Test datasets from the orig
 #### Feature Descriptions
 
 * Subject
-  - An integer from 1-30 that identifies the one of the 30 volunteers who participated in the experiment
+  - An integer from 1-30 that identifies the one of the 30 volunteers who participated in the experiment. This feature has no units.
 
 * Activity
-  - One of 6 activities associated with the corresponding measurements.  The Activity field appears as a string in the dataset for ease of understanding (e.g., WALKING). The numbers 1-6 were used in the original datasets, and are mapped to the activity labels as shown below.
+  - One of 6 activities associated with the corresponding measurements. This feature has no units. The Activity field appears as a string in the dataset for ease of understanding (e.g., WALKING). The numbers 1-6 were used in the original datasets, and are mapped to the activity labels as shown below.
     * 1 WALKING
     * 2 WALKING_UPSTAIRS
     * 3 WALKING_DOWNSTAIRS
@@ -22,7 +22,7 @@ This dataset was created by merging the Training and Test datasets from the orig
     * 6 LAYING
 
 * Measurements
-  - The measurements fall into the 17 groups listed below. Some of the measurements have individual X, Y, and Z components. Only the mean and standard deviation values of each measurement were selected for the HARtidy1.txt dataset.
+  - The measurements fall into the 17 groups listed below. Some of the measurements have individual X, Y, and Z components. Only the mean and standard deviation values of each measurement were selected for the HARtidy1.txt dataset. Using the embedded accelerometer and gyroscope of a smartphone (Samsung Galaxy S II), 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz were captured. The features selected for the original database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
     * tBodyAcc-XYZ
     * tGravityAcc-XYZ
     * tBodyAccJerk-XYZ
@@ -40,7 +40,7 @@ This dataset was created by merging the Training and Test datasets from the orig
     * fBodyAccJerkMag
     * fBodyGyroMag
     * fBodyGyroJerkMag
-  - The following 66 measurements were selected from the 561 measurements in the original datasets. The column number of the original measurement is shown for reference. None of the selected measurements were modified numerically, and all are normalized to fall within the range of [-1,1]. The names of the measurements are unchanged from the original datasets. Note that `mean()` and `std()` refer to the mean and standard deviation components of each measurement.
+  - The following 66 measurements were selected from the 561 measurements in the original datasets. The column number of the original measurement is shown for reference. None of the selected measurements were modified numerically nor converted to different units, and all are normalized to fall within the range of [-1,1]. The names of the measurements are unchanged from the original datasets. Note that `mean()` and `std()` refer to the mean and standard deviation components of each measurement.
     * 1 tBodyAcc-mean()-X
     * 2 tBodyAcc-mean()-Y
     * 3 tBodyAcc-mean()-Z
@@ -115,10 +115,10 @@ This dataset was created by summarizing the HARtidy1.txt dataset. This dataset p
 #### Feature Descriptions
 
 * Subject
-  - An integer from 1-30 that identifies the one of the 30 volunteers who participated in the experiment
+  - An integer from 1-30 that identifies the one of the 30 volunteers who participated in the experiment. This feature has no units.
 
 * Activity
-  - One of 6 activities associated with the corresponding measurements.  The Activity field appears as a string in the dataset for ease of understanding (e.g., WALKING). The numbers 1-6 were used in the original datasets, and are mapped to the activity labels as shown below.
+  - One of 6 activities associated with the corresponding measurements. This feature has no units. The Activity field appears as a string in the dataset for ease of understanding (e.g., WALKING). The numbers 1-6 were used in the original datasets, and are mapped to the activity labels as shown below.
     * 1 WALKING
     * 2 WALKING_UPSTAIRS
     * 3 WALKING_DOWNSTAIRS
@@ -127,7 +127,7 @@ This dataset was created by summarizing the HARtidy1.txt dataset. This dataset p
     * 6 LAYING
 
 * Measurements
-  - The average value of the corresponding measurements in HARtidy1,txt, grouped by each Subject and Activity combination. The feature names are unchanged from the names used in HARtidy1.txt. Average values for each measurement will fall into the range of [-1,1].
+  - The average value of the corresponding measurements in HARtidy1,txt, grouped by each Subject and Activity combination. The feature names and units are unchanged from those used in HARtidy1.txt. Average values for each measurement will fall into the range of [-1,1].
     * tBodyAcc-mean()-X
     * tBodyAcc-mean()-Y
     * tBodyAcc-mean()-Z
